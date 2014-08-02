@@ -1,0 +1,12 @@
+---
+
+- name: Configuring vim
+  template: >
+    src=etc-vim-vimrc.local.j2
+    dest=/etc/vim/vimrc.local
+    owner=root
+    group=root
+    mode=0644
+  tags:
+    - development
+    - vim

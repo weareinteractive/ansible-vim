@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  vars_files:
+    - 'defaults/main.yml'
+  tasks:
+    - include: 'tasks/main.yml'
+      vars:
+        vim_config:
+          - 'set tabstop=2'
+          - 'set shiftwidth=2'
+          - 'syntax enable'
