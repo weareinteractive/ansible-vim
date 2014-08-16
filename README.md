@@ -1,7 +1,7 @@
 # Ansible Vim Role
 
-[![Build Status](https://travis-ci.org/weareinteractive/ansible-role-vim.png?branch=master)](https://travis-ci.org/weareinteractive/ansible-role-vim)
-[![Stories in Ready](https://badge.waffle.io/weareinteractive/ansible-role-vim.svg?label=ready&title=Ready)](http://waffle.io/weareinteractive/ansible-role-vim)
+[![Build Status](https://travis-ci.org/weareinteractive/ansible-vim.png?branch=master)](https://travis-ci.org/weareinteractive/ansible-vim)
+[![Stories in Ready](https://badge.waffle.io/weareinteractive/ansible-vim.svg?label=ready&title=Ready)](http://waffle.io/weareinteractive/ansible-vim)
 
 > `vim` is an [Ansible](http://www.ansible.com) role which: 
 > 
@@ -25,7 +25,7 @@ $ arm install franklinkim.vim
 Using `git`:
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-role-vim.git
+$ git clone https://github.com/weareinteractive/ansible-vim.git
 ```
 
 ## Variables
@@ -56,8 +56,8 @@ vim_config: []
 ## Testing
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-role-vim.git
-$ cd ansible-role-vim
+$ git clone https://github.com/weareinteractive/ansible-vim.git
+$ cd ansible-vim
 $ vagrant up
 ```
 
