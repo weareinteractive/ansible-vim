@@ -1,0 +1,32 @@
+---
+
+- name: Installing packages on RedHat
+  yum: >
+    pkg={{ item }}
+    state=present
+  with_items:
+    - vim
+  tags:
+    - development
+    - vim
+    - install
+
+- name: Create vim configuration directory
+  when: ansible_os_family == 'RedHat'
+  file: state=directory dest=/etc/vim
+  tags:
+    - development
+    - vim
+    - config
+
+- name: Source vimrc.local
+  when: ansible_os_family == 'RedHat'
+  lineinfile:
+    state=present
+    dest=/etc/vimrc
+    insertafter=EOF
+    line='source /etc/vim/vimrc.local'
+  tags:
+    - development
+    - vim
+    - config

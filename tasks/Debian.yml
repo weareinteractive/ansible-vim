@@ -1,6 +1,6 @@
 ---
 
-- name: Installing packages
+- name: Installing packages on Debian
   apt: >
     pkg={{ item }}
     state=present

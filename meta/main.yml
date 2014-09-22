@@ -9,6 +9,9 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - All
+    - name: EL
+      versions:
+        - All
   categories:
     - development
 # List your role dependencies here, one per line. Only
