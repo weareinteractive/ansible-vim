@@ -1,7 +1,7 @@
 ---
 
-- name: Installing packages on Debian
-  apt: >
+- name: Installing packages
+  yum: >
     pkg={{ item }}
     state=present
   with_items:
