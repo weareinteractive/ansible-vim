@@ -7,5 +7,7 @@
 #   - "set shiftwidth=2"
 #   - "syntax enable"
 
+# package name (version)
+vin_package: vin
 # global vim configuration
 vim_config: []
