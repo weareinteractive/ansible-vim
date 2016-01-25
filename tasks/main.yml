@@ -1,9 +1,23 @@
 ---
 
-- include: install_debian.yml
-  when: ansible_os_family == 'Debian'
-- include: install_redhat.yml
-  when: ansible_os_family == 'RedHat'
+- include: install.yml
+  tags:
+    - development
+    - vim
+    - install
+    - vim-install
+
 - include: config.yml
+  tags:
+    - development
+    - vim
+    - config
+    - vim-config
+
 - include: config_redhat.yml
   when: ansible_os_family == 'RedHat'
+  tags:
+    - development
+    - vim
+    - config
+    - vim-config
