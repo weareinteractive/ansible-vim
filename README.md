@@ -64,6 +64,7 @@ This is an example playbook:
 ---
 
 - hosts: all
+  sudo: yes
   roles:
     - franklinkim.vim
   vars:
